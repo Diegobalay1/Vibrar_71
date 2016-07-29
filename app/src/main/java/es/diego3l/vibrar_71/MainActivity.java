@@ -22,13 +22,9 @@ public class MainActivity extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //vibrator.vibrate(600);
-                Vibrator v = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-                if (v.hasVibrator()){
-                    Log.v("Podemos vibrar", "Sí");
-                } else {
-                    Log.v("Podemos vibrar", "No");
-                }
+                long[] pattern = {0, 100, 1000};
+                vibrator.vibrate(pattern, 0);
+
             }
         });
 
