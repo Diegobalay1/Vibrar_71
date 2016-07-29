@@ -30,3 +30,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+/*
+*
+* Public methods
+*
+*
+abstract void	cancel()
+Turn the vibrator off.
+
+abstract boolean	hasVibrator()
+Check whether the hardware has a vibrator.
+
+void	vibrate(long milliseconds)
+Vibrate constantly for the specified period of time.
+
+void	vibrate(long[] pattern, int repeat)
+Vibrate with a given pattern.
+
+void	vibrate(long[] pattern, int repeat, AudioAttributes attributes)
+Vibrate with a given pattern.
+
+void	vibrate(long milliseconds, AudioAttributes attributes)
+Vibrate constantly for the specified period of time.
+*
+*
+*
+*/
