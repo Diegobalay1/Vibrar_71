@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                long[] pattern = {0, 100, 1000};
-                vibrator.vibrate(pattern, 0);
+                long[] pattern = {0, 100, 1000, 200, 200, 100, 400, 2000, 100};
+                vibrator.vibrate(pattern, -1);
 
             }
         });
